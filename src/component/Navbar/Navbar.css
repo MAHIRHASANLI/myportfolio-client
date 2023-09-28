@@ -1,0 +1,173 @@
+@media screen and (min-width: 850px) {
+  .header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+
+  .header .navHeaders {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  .navHeaders .hero-fullName {
+    display: flex;
+    align-items: center;
+  }
+
+  .navHeaders .hero-fullName img {
+    background: #7843e9;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    display: block;
+  }
+
+  .navHeaders .hero-fullName,
+  .navHeaders span {
+    color: #333;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  .header .navLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header .navLink a {
+    font-family: "Source Sans 3", sans-serif;
+    margin: 5px 15px;
+    display: inline-block;
+    font-size: 16px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: color 0.3s;
+    cursor: pointer;
+  }
+  .openMenu,
+  .navMobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .header {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+  }
+
+  .header .navHeaders {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+
+  .header .navHeaders {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  .navHeaders .hero-fullName {
+    display: flex;
+    align-items: center;
+  }
+
+  .navHeaders .hero-fullName img {
+    background: #7843e9;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    display: block;
+  }
+
+  .header .navHeaders .navLink {
+    display: none;
+  }
+
+  .navHeaders .hero-fullName,
+  .navHeaders span {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #333;
+  }
+
+  .header nav .navLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .openMenu svg {
+    color: black;
+    font-size: 25px;
+  }
+  .navMobile {
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 70px;
+    transition: all 0.5s ease-out;
+    z-index: -9999;
+  }
+  .navMobile a {
+    font-family: "Source Sans 3", sans-serif;
+    padding: 16px 30px;
+    display: inline-block;
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: color 0.3s;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    text-align: right;
+    border-bottom: 1px solid #eee;
+    transition: 0.4s;
+    z-index: -9;
+  }
+  .navMobile a:hover {
+    color: #7843e9;
+  }
+}

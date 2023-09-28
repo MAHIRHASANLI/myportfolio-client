@@ -1,0 +1,511 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+  .container h2 {
+    font-size: 40px;
+    font-family: "Source Sans 3", sans-serif;
+    position: relative;
+  }
+
+  .container h2::after {
+    position: absolute;
+    content: "";
+    bottom: -20px;
+    left: 0;
+    width: 40px;
+    height: 5px;
+    border-radius: 3px;
+    background: #7843e9;
+    margin-top: 0;
+  }
+
+  .row div {
+    padding: 15px 0;
+  }
+
+  .row div i {
+    font-size: 20px;
+    cursor: pointer;
+    margin: auto;
+    color: black;
+    padding: 10px;
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+
+  .row div i:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .row div a span {
+    font-size: 17px;
+    padding-left: 15px;
+    font-family: "Inconsolata", monospace;
+    cursor: pointer;
+    color: #333;
+  }
+
+  .message {
+    width: 100%;
+    background-color: white;
+    padding: 50px 30px 80px;
+  }
+
+  .message_item {
+    width: 100%;
+    padding: 0px 30px;
+  }
+
+  .comment {
+    margin-bottom: 15px;
+    width: 100%;
+    clear: both;
+    color: #707070;
+  }
+
+  .comment textarea {
+    width: 96%;
+    height: 180px;
+    border: 1px solid rgb(107, 77, 230);
+    background: transparent;
+    padding: 2%;
+    line-height: 25px;
+    color: #a4a4a4;
+    font-size: 14px;
+    font-family: inherit;
+    transition: all 0.2s linear;
+  }
+
+  .comment textarea:hover,
+  .comment textarea:focus,
+  .comment textarea:active {
+    border: 1px solid #f0ede9;
+    background: transparent;
+    outline: none;
+  }
+
+  .comment input {
+    width: 100%;
+    border: 1px solid rgb(107, 77, 230);
+    background: transparent;
+    height: 42px;
+    box-sizing: border-box;
+    padding: 9px 11px;
+    font-size: 14px;
+    color: #a4a4a4;
+    font-family: inherit;
+    transition: all 0.2s linear;
+  }
+
+  .comment input:hover,
+  .comment input:focus,
+  .comment input:active {
+    border: 1px solid #f0ede9;
+    background: transparent;
+    outline: none;
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+  .container h2 {
+    font-family: "Source Sans 3", sans-serif;
+    position: relative;
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 0;
+  }
+  .container h2::after {
+    position: absolute;
+    content: "";
+    bottom: -20px;
+    left: 0;
+    width: 40px;
+    height: 5px;
+    border-radius: 3px;
+    background: #7843e9;
+  }
+
+  .row div {
+    padding: 15px 0;
+  }
+
+  .row div i {
+    font-size: 20px;
+    cursor: pointer;
+    margin: auto;
+    color: black;
+    padding: 10px;
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+
+  .row div i:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .row div a span {
+    font-size: 17px;
+    padding-left: 15px;
+    font-family: "Inconsolata", monospace;
+    cursor: pointer;
+    color: #333;
+  }
+
+  .message_item {
+    width: 100%;
+    padding: 0px 20px;
+  }
+
+  .comment {
+    margin-bottom: 15px;
+    width: 100%;
+    clear: both;
+    color: #707070;
+  }
+
+  .comment textarea {
+    width: 96%;
+    height: 180px;
+    border: 1px solid rgb(107, 77, 230);
+    background: transparent;
+    padding: 2%;
+    line-height: 25px;
+    font-family: inherit;
+    color: #a4a4a4;
+    font-size: 14px;
+    font-family: inherit;
+    transition: all 0.2s linear;
+  }
+
+  .comment textarea:hover,
+  .comment textarea:focus,
+  .comment textarea:active {
+    border: 1px solid #f0ede9;
+    background: transparent;
+    outline: none;
+  }
+
+  .comment input {
+    width: 100%;
+    border: 1px solid rgb(107, 77, 230);
+    background: transparent;
+    height: 42px;
+    box-sizing: border-box;
+    padding: 9px 11px;
+    font-size: 14px;
+    color: #a4a4a4;
+    font-family: inherit;
+    transition: all 0.2s linear;
+  }
+
+  .comment input:hover,
+  .comment input:focus,
+  .comment input:active {
+    border: 1px solid #f0ede9;
+    background: transparent;
+    outline: none;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .container h2 {
+    font-family: "Source Sans 3", sans-serif;
+    position: relative;
+    font-size: 34px;
+    margin-top: 0;
+  }
+  .container h2::after {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    left: 0;
+    width: 30px;
+    height: 5px;
+    border-radius: 3px;
+    background: #7843e9;
+  }
+  .row div {
+    padding: 15px 0;
+  }
+
+  .row div i {
+    font-size: 16px;
+    cursor: pointer;
+    margin: auto;
+    color: black;
+    padding: 10px;
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+
+  .row div i:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .row div a span {
+    font-size: 14px;
+    padding-left: 6px;
+    font-family: "Inconsolata", monospace;
+    cursor: pointer;
+    color: #333;
+  }
+
+  .message_item {
+    width: 100%;
+    padding: 0px 10px;
+  }
+
+  .comment {
+    margin-bottom: 15px;
+    width: 100%;
+    clear: both;
+    color: #707070;
+  }
+
+  .comment textarea {
+    width: 95%;
+    height: 90px;
+    border: 1px solid rgb(107, 77, 230);
+    background: transparent;
+    padding: 2%;
+    line-height: 25px;
+    font-family: inherit;
+    color: #a4a4a4;
+    font-size: 14px;
+    font-family: inherit;
+    transition: all 0.2s linear;
+  }
+
+  .comment textarea:hover,
+  .comment textarea:focus,
+  .comment textarea:active {
+    border: 1px solid #f0ede9;
+    background: transparent;
+    outline: none;
+  }
+
+  .comment input {
+    width: 100%;
+    border: 1px solid rgb(107, 77, 230);
+    background: transparent;
+    height: 36px;
+    box-sizing: border-box;
+    padding: 9px 11px;
+    font-size: 14px;
+    color: #a4a4a4;
+    font-family: inherit;
+    transition: all 0.2s linear;
+  }
+
+  .comment input:hover,
+  .comment input:focus,
+  .comment input:active {
+    border: 1px solid #f0ede9;
+    background: transparent;
+    outline: none;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+  .container h2 {
+    font-family: "Source Sans 3", sans-serif;
+    position: relative;
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .container h2::after {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    left: 0;
+    width: 30px;
+    height: 5px;
+    border-radius: 3px;
+    background: #7843e9;
+  }
+
+  .row div {
+    padding: 10px 0;
+  }
+
+  .row div i {
+    font-size: 16px;
+    cursor: pointer;
+    margin: auto;
+    color: black;
+    padding: 10px;
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+
+  .row div i:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .row div a span {
+    font-size: 14px;
+    padding-left: 6px;
+    font-family: "Inconsolata", monospace;
+    cursor: pointer;
+    color: #333;
+  }
+
+  .message_item {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .comment {
+    margin-bottom: 15px;
+    width: 100%;
+    clear: both;
+    color: #707070;
+  }
+
+  .comment textarea {
+    width: 95%;
+    height: 80px;
+    border: 1px solid rgb(107, 77, 230);
+    background: transparent;
+    padding: 2%;
+    line-height: 25px;
+    font-family: inherit;
+    color: #a4a4a4;
+    font-size: 14px;
+    font-family: inherit;
+    transition: all 0.2s linear;
+  }
+
+  .comment textarea:hover,
+  .comment textarea:focus,
+  .comment textarea:active {
+    border: 1px solid transparent;
+    background: white;
+    outline: none;
+  }
+
+  .comment input {
+    width: 100%;
+    border: 1px solid rgb(107, 77, 230);
+    background: transparent;
+    height: 36px;
+    box-sizing: border-box;
+    padding: 9px 11px;
+    font-size: 14px;
+    color: #a4a4a4;
+    font-family: inherit;
+    transition: all 0.2s linear;
+  }
+
+  .comment input:hover,
+  .comment input:focus,
+  .comment input:active {
+    border: 1px solid #f0ede9;
+    background: transparent;
+    outline: none;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 400px) {
+  .container h2 {
+    font-family: "Source Sans 3", sans-serif;
+    position: relative;
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  .container h2::after {
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    left: 0;
+    width: 30px;
+    height: 5px;
+    border-radius: 3px;
+    background: #7843e9;
+  }
+
+  .row div {
+    padding: 10px 0;
+  }
+
+  .row div i {
+    font-size: 14px;
+    cursor: pointer;
+    margin: auto;
+    color: black;
+    padding: 8px;
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+
+  .row div i:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .row div a span {
+    font-size: 14px;
+    padding-left: 6px;
+    font-family: "Inconsolata", monospace;
+    cursor: pointer;
+    color: #333;
+  }
+
+  .message_item {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .comment {
+    margin-bottom: 15px;
+    width: 100%;
+    clear: both;
+    color: #707070;
+  }
+
+  .comment textarea {
+    width: 95%;
+    height: 100px;
+    border: 1px solid rgb(107, 77, 230);
+    background: transparent;
+    padding: 2%;
+    line-height: 25px;
+    font-family: inherit;
+    color: #a4a4a4;
+    font-size: 14px;
+    font-family: inherit;
+    transition: all 0.2s linear;
+  }
+
+  .comment textarea:hover,
+  .comment textarea:focus,
+  .comment textarea:active {
+    border: 1px solid #f0ede9;
+    background: transparent;
+    outline: none;
+  }
+
+  .comment input {
+    width: 100%;
+    border: 1px solid rgb(107, 77, 230);
+    background: transparent;
+    height: 36px;
+    box-sizing: border-box;
+    padding: 9px 11px;
+    font-size: 14px;
+    color: #a4a4a4;
+    font-family: inherit;
+    transition: all 0.2s linear;
+  }
+
+  .comment input:hover,
+  .comment input:focus,
+  .comment input:active {
+    border: 1px solid #f0ede9;
+    background: transparent;
+    outline: none;
+  }
+}

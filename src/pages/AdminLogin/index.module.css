@@ -1,0 +1,39 @@
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+  }
+  .form input {
+    height: 15px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+  .form input {
+    height: 10px;
+    font-size: 12px;
+  }
+}

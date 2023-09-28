@@ -1,0 +1,161 @@
+@media only screen and (min-width: 800px) and (max-width: 1599px) {
+  .containerBox {
+    display: flex;
+    justify-content: flex-end;
+    padding: 60px;
+  }
+
+  .searcInput {
+    width: 100%;
+    outline: none;
+    border-radius: 12px;
+    border: 1px solid #7843e9;
+    color: #7843e9;
+    padding: 16px;
+    font-family: "Source Sans 3", sans-serif;
+  }
+
+  .searcInput::placeholder {
+    font-size: 15px;
+    color: #7843e9;
+    font-family: "Source Sans 3", sans-serif;
+  }
+
+  .gridItem {
+    min-height: 50px;
+    font-size: 14px;
+    border-radius: 12px;
+    padding: 30px;
+    cursor: pointer;
+    color: #7843e9;
+    background-color: white;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    transition: 0.3s linear;
+    font-family: "Source Sans 3", sans-serif;
+  }
+
+  .gridItem:hover {
+    transform: translateY(-5px);
+  }
+
+  .gridItem a {
+    text-decoration: underline;
+    font-weight: 700;
+    margin-left: 2px;
+    color: inherit;
+    transition: 0.3s linear;
+    color: #333;
+  }
+
+  .footer_bottom a:hover {
+    color: #7843e9;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+  .containerBox {
+    display: flex;
+    justify-content: flex-end;
+    padding: 50px;
+  }
+
+  .searcInput {
+    width: 100%;
+    outline: none;
+    border-radius: 12px;
+    border: 1px solid #7843e9;
+    color: #7843e9;
+    padding: 14px;
+    font-family: "Source Sans 3", sans-serif;
+  }
+
+  .searcInput::placeholder {
+    font-size: 15px;
+    color: #7843e9;
+    font-family: "Source Sans 3", sans-serif;
+  }
+
+  .gridItem {
+    min-height: 40px;
+    font-size: 13px;
+    border-radius: 12px;
+    padding: 20px;
+    cursor: pointer;
+    color: #7843e9;
+    background-color: white;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    transition: 0.3s linear;
+    font-family: "Source Sans 3", sans-serif;
+  }
+
+  .gridItem:hover {
+    transform: translateY(-3px);
+  }
+
+  .gridItem a {
+    text-decoration: underline;
+    font-weight: 700;
+    margin-left: 1px;
+    color: inherit;
+    transition: 0.3s linear;
+    color: #333;
+  }
+
+  .footer_bottom a:hover {
+    color: #7843e9;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+  .containerBox {
+    display: flex;
+    justify-content: flex-end;
+    padding: 50px 20px;
+  }
+
+  .searcInput {
+    width: 100%;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #7843e9;
+    color: #7843e9;
+    padding: 8px;
+    font-family: "Source Sans 3", sans-serif;
+  }
+
+  .searcInput::placeholder {
+    font-size: 12px;
+    color: #7843e9;
+    font-family: "Source Sans 3", sans-serif;
+  }
+
+  .gridItem {
+    min-height: 30px;
+    font-size: 12px;
+    border-radius: 12px;
+    padding: 10px 5px;
+    cursor: pointer;
+    color: #7843e9;
+    background-color: white;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    transition: 0.3s linear;
+    font-family: "Source Sans 3", sans-serif;
+  }
+
+  .gridItem:hover {
+    transform: translateY(-3px);
+  }
+
+  .gridItem a {
+    text-decoration: underline;
+    font-weight: 700;
+    margin-left: 1px;
+    color: inherit;
+    transition: 0.3s linear;
+    color: #333;
+  }
+
+  .footer_bottom a:hover {
+    color: #7843e9;
+  }
+}

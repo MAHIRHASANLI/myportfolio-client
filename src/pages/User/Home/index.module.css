@@ -1,0 +1,89 @@
+.loadingFillingBottle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1599px) {
+  .container {
+    width: 80%;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  .name {
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #111;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 800;
+  }
+
+  .profession {
+    color: #333;
+    font-size: 22px;
+    font-family: "Source Sans 3", sans-serif;
+    text-align: center;
+    line-height: 1.6;
+    width: 60%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 950px) {
+  .container {
+    width: 80%;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  .name {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #111;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 800;
+  }
+
+  .profession {
+    color: #333;
+    font-size: 20px;
+    font-family: "Source Sans 3", sans-serif;
+    text-align: center;
+    line-height: 1.4;
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+  .container {
+    width: 85%;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .name {
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #111;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 800;
+  }
+
+  .profession {
+    color: #333;
+    font-size: 16px;
+    font-family: "Source Sans 3", sans-serif;
+    text-align: center;
+    line-height: 1.4;
+    width: 100%;
+    margin: auto;
+  }
+}

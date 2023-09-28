@@ -1,0 +1,367 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.scilss {
+  position: relative;
+}
+
+.row i {
+  color: #241e38;
+}
+.row h3 span,
+.row p span {
+  color: white;
+  font-family: "Source Sans 3", sans-serif;
+  transition: all 0.5s ease-out;
+}
+.row i:hover,
+.row h3 span:hover,
+.row p span:hover {
+  color: #7843e9;
+}
+
+.row i {
+  transition: all 0.5s ease-out;
+}
+
+.arrow_icon {
+  position: relative;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+  .container .row {
+    background-color: rgb(230, 230, 230);
+    padding: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s linear;
+  }
+
+  .container .row:hover {
+    transform: translateY(-10px);
+  }
+
+  .container .row h3 {
+    font-size: 22px;
+    font-family: "Source Sans 3", sans-serif;
+  }
+
+  .container .row p {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .container .row:hover {
+    color: #f0ede9;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .container h2 {
+    font-size: 40px;
+    font-family: "Source Sans 3", sans-serif;
+    position: relative;
+  }
+
+  .container h2::after {
+    position: absolute;
+    content: "";
+    bottom: -20px;
+    left: 0;
+    width: 40px;
+    height: 5px;
+    border-radius: 3px;
+    background: #7843e9;
+  }
+
+  .arrow_icon::after {
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 4px;
+    border-radius: 10px;
+    left: 0;
+    bottom: -45px;
+    background: #7843e9;
+    transition: all 0.5s ease-out;
+  }
+
+  .row:hover .arrow_icon::after {
+    bottom: -5px;
+  }
+
+  .row:hover .arrow_icon i {
+    margin-left: 10px;
+    color: #7843e9;
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+  .container .row {
+    background-color: rgb(230, 230, 230);
+    padding: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s linear;
+  }
+
+  .container .row:hover {
+    transform: translateY(-10px);
+  }
+
+  .container .row h3 {
+    font-size: 20px;
+    font-family: "Source Sans 3", sans-serif;
+  }
+
+  .container .row p {
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .container .row:hover {
+    color: #f0ede9;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .container h2 {
+    font-family: "Source Sans 3", sans-serif;
+    position: relative;
+    font-size: 36px;
+    font-weight: 500;
+  }
+  .container h2::after {
+    position: absolute;
+    content: "";
+    bottom: -20px;
+    left: 0;
+    width: 40px;
+    height: 5px;
+    border-radius: 3px;
+    background: #7843e9;
+  }
+
+  .arrow_icon::after {
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 4px;
+    border-radius: 10px;
+    left: 0;
+    bottom: -35px;
+    background: #7843e9;
+    transition: all 0.5s ease-out;
+  }
+
+  .row:hover .arrow_icon::after {
+    bottom: -5px;
+  }
+
+  .row:hover .arrow_icon i {
+    margin-left: 10px;
+    color: #7843e9;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .container .row {
+    background-color: rgb(230, 230, 230);
+    padding: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s linear;
+  }
+
+  .container .row:hover {
+    transform: translateY(-5px);
+  }
+
+  .container .row h3 {
+    font-size: 20px;
+    font-family: "Source Sans 3", sans-serif;
+  }
+
+  .container .row p {
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .container .row:hover {
+    color: #f0ede9;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .container h2 {
+    font-family: "Source Sans 3", sans-serif;
+    position: relative;
+    font-size: 34px;
+  }
+  .container h2::after {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    left: 0;
+    width: 30px;
+    height: 5px;
+    border-radius: 3px;
+    background: #7843e9;
+  }
+
+  .arrow_icon::after {
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 4px;
+    border-radius: 10px;
+    left: 0;
+    bottom: -38px;
+    background: #7843e9;
+    transition: all 0.5s ease-out;
+  }
+
+  .row:hover .arrow_icon::after {
+    bottom: -5px;
+  }
+
+  .row:hover .arrow_icon i {
+    margin-left: 10px;
+    color: #7843e9;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+  .container .row {
+    background-color: rgb(230, 230, 230);
+    padding: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s linear;
+  }
+
+  .container .row:hover {
+    transform: translateY(-5px);
+  }
+
+  .container .row h3 {
+    font-size: 22px;
+    font-family: "Source Sans 3", sans-serif;
+  }
+
+  .container .row p {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .container .row:hover {
+    color: #f0ede9;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .container h2 {
+    font-family: "Source Sans 3", sans-serif;
+    position: relative;
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .container h2::after {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    left: 0;
+    width: 30px;
+    height: 5px;
+    border-radius: 3px;
+    background: #7843e9;
+  }
+
+  .arrow_icon::after {
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 4px;
+    border-radius: 10px;
+    left: 0;
+    bottom: -40px;
+    background: #7843e9;
+    transition: all 0.5s ease-out;
+  }
+
+  .row:hover .arrow_icon::after {
+    bottom: -5px;
+  }
+
+  .row:hover .arrow_icon i {
+    margin-left: 10px;
+    color: #7843e9;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 400px) {
+  .container .row {
+    background-color: rgb(230, 230, 230);
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s linear;
+  }
+
+  .container .row:hover {
+    transform: translateY(-3px);
+  }
+
+  .container .row h3 {
+    font-size: 20px;
+    margin: 0;
+    font-family: "Source Sans 3", sans-serif;
+  }
+
+  .container .row p {
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .container h2 {
+    font-family: "Source Sans 3", sans-serif;
+    position: relative;
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  .container h2::after {
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    left: 0;
+    width: 30px;
+    height: 5px;
+    border-radius: 3px;
+    background: #7843e9;
+  }
+
+  .container .row:hover {
+    color: #f0ede9;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .arrow_icon::after {
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 4px;
+    border-radius: 10px;
+    left: 0;
+    bottom: -30px;
+    background: #7843e9;
+    transition: all 0.5s ease-out;
+  }
+
+  .row:hover .arrow_icon::after {
+    bottom: -5px;
+  }
+
+  .row:hover .arrow_icon i {
+    margin-left: 10px;
+    color: #7843e9;
+  }
+}

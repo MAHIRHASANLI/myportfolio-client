@@ -1,0 +1,68 @@
+@media only screen and (min-width: 950px) and (max-width: 1599px) {
+  .button {
+    background: #7843e9;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+    font-family: "Source Sans 3", sans-serif;
+    cursor: pointer;
+    transition: all 0.4s linear;
+    padding: 15px 70px;
+    margin-top: 50px;
+    font-size: 20px;
+  }
+  .button:hover {
+    transform: translateY(-5px);
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 950px) {
+  .button {
+    background: #7843e9;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+    font-family: "Source Sans 3", sans-serif;
+    cursor: pointer;
+    transition: all 0.4s linear;
+    padding: 12px 65px;
+    margin-top: 50px;
+    font-size: 20px;
+  }
+  .button:hover {
+    transform: translateY(-5px);
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+  .button {
+    background: #7843e9;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+    font-family: "Source Sans 3", sans-serif;
+    cursor: pointer;
+    transition: all 0.4s linear;
+    padding: 15px 60px;
+    margin-top: 50px;
+    font-size: 18px;
+  }
+  .button:hover {
+    transform: translateY(-5px);
+  }
+}
