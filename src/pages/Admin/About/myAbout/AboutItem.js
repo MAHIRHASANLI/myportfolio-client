@@ -8,7 +8,7 @@ import axios from 'axios';
 import { CircularProgress } from 'react-cssfx-loading';
 import { myAboutValidation } from './myAbout.validation';
 import { useUpdateMyAboutDataMutation } from '../../../../store/apis/myAboutApi';
-import { TextField } from '@mui/material';
+import { Fab, TextField } from '@mui/material';
 import UpdateDataModal from '../../../../shared/modal/Modal';
 
 const AboutItem = ({ item }) => {
@@ -74,16 +74,36 @@ const AboutItem = ({ item }) => {
             sx={{ width: "100%", marginBottom: "20px" }}
             label={formik.errors.profession && formik.touched.profession ? (`${formik.errors.profession}`) : ("Profession")}
         />
-        <TextField
-            error={formik.errors.image && formik.touched.image ? true : false}
-            size="small"
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            value={formik.values.image}
-            name="image"
-            sx={{ width: "100%", marginBottom: "20px" }}
-            label={formik.errors.image && formik.touched.image ? (`${formik.errors.image}`) : ("Image")}
-        /></>)
+        <label className="file_img" htmlFor="upload-photo">
+            <input
+                style={{ display: "none" }}
+                id="upload-photo"
+                name="image"
+                type="file"
+                onChange={(e) =>
+                    formik.setFieldValue("image", e.target.files[0])
+                }
+            />
+
+            <Fab
+                color="info"
+                size="small"
+                component="span"
+                aria-label="add"
+                variant="extended"
+                style={{ marginTop: "10px" }}
+            >
+                {formik.errors.image && formik.touched.image ? (
+                    <span style={{ color: "red", fontSize: "14px" }}>
+                        {formik.errors.image}
+                    </span>
+                ) : (
+                    <span style={{ color: "white", fontSize: "14px" }}>
+                        + Upload Photo
+                    </span>
+                )}
+            </Fab>
+        </label></>)
     return (
         <React.Fragment>
             <TableRow >

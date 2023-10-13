@@ -8,5 +8,15 @@ export const myAboutValidation = Yup.object().shape({
     profession: Yup.string().min(5, 'Too Short!')
         .max(500, 'Too Long!').trim()
         .strict(true).required('Profession required'),
-    image: Yup.string().url().trim().strict(true).required('Image required'),
+        image: Yup.mixed()
+        .required("required!")
+        .test(
+            "FILE_SIZE",
+            "Too big!",
+            (value) => value && value.size < 1024 * 1024
+        ).test(
+            "FILE_TYPE",
+            "Invalid!",
+            (value) => value && ["image/png", "image/jpeg", "image/webp"].includes(value.type)
+        )
 })
