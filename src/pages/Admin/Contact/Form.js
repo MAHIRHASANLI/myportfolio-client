@@ -1,4 +1,4 @@
-import { TextField } from '@mui/material'
+import { Fab, TextField } from '@mui/material'
 import React from 'react'
 
 const FormContact = ({formik}) => {
@@ -63,7 +63,7 @@ const FormContact = ({formik}) => {
         sx={{ width: "100%", marginBottom: "20px" }}
         label={formik.errors.instagram && formik.touched.instagram ? (`${formik.errors.instagram}`) : ("Instagram")}
     />
-    <TextField
+    {/* <TextField
         error={formik.errors.mydata && formik.touched.mydata ? true : false}
         size="small"
         onChange={formik.handleChange}
@@ -72,7 +72,37 @@ const FormContact = ({formik}) => {
         name="mydata"
         label={formik.errors.mydata && formik.touched.mydata ? (`${formik.errors.mydata}`) : ("My CV")}
         sx={{ width: "100%", marginBottom: "20px" }}
-    />
+    /> */}
+         <label  htmlFor="upload-photo">
+            <input
+                style={{ display: "none" }}
+                id="upload-photo"
+                name="mydata"
+                type="file"
+                onChange={(e) =>
+                    formik.setFieldValue("mydata", e.target.files[0])
+                }
+            />
+
+            <Fab
+                color="info"
+                size="small"
+                component="span"
+                aria-label="add"
+                variant="extended"
+                style={{ marginTop: "10px" }}
+            >
+                {formik.errors.mydata && formik.touched.mydata ? (
+                    <span style={{ color: "red", fontSize: "14px" }}>
+                        {formik.errors.mydata}
+                    </span>
+                ) : (
+                    <span style={{ color: "white", fontSize: "14px" }}>
+                        + Upload CV
+                    </span>
+                )}
+            </Fab>
+        </label>
     </>
   )
 }

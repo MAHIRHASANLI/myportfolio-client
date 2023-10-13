@@ -1,4 +1,5 @@
 import * as Yup from "yup";
+const SUPPORTED_FORMATS = ['application/pdf', 'application/dosx'];
 
 export const myContactValidation = Yup.object().shape({
     email: Yup.string().email('Invalid email').trim()
@@ -11,7 +12,9 @@ export const myContactValidation = Yup.object().shape({
     github: Yup.string().url().trim().strict(true)
         .required('Git Hub required'),
     instagram: Yup.string().url().trim().strict(true).required('Instagram required'),
-    mydata: Yup.string().min(5, 'Too Short!')
-        .max(2000, 'Too Long!').trim()
-        .strict(true).required('Cv required'),
+    mydata: Yup.mixed()
+        .nullable()
+        .required('A file is required')
+        .test('format',
+            'upload file', (value) => !value || (value && SUPPORTED_FORMATS.includes(value.type)))
 })
