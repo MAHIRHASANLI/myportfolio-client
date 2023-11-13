@@ -5,6 +5,7 @@ import Form from "./Form";
 import Button from "../../../shared/button/Button";
 import { useGetContactDAtaQuery } from "../../../store/apis/myContactApi";
 import { Skeleton } from "@mui/material";
+import myCv from "../../../cv/MahirHasanliCV.pdf"
 
 const Contact = () => {
   const [downLoading, setDownloadLoading] = useState(false);
@@ -40,13 +41,13 @@ const Contact = () => {
         </div>
 
         <a
-          href={item.mydata}
+          href={myCv}
           download="Example-PDF-document"
           target="_blank"
           rel="noreferrer"
           title="download"
         >
-          <Button onClick={() => downloadFile(item.mydata)}>
+          <Button onClick={() => downloadFile()}>
             {" "}
             {downLoading ? (
               "is loaded"
@@ -64,11 +65,11 @@ const Contact = () => {
       </div>
     ));
 
-  const downloadFile = (url) => {
+  const downloadFile = () => {
     setDownloadLoading(true);
     setTimeout(() => {
       const link = document.createElement("a");
-      link.href = url;
+      link.href = myCv;
       link.setAttribute("download", link);
 
       // Append to html link element page
