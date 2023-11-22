@@ -5,7 +5,7 @@ import Form from "./Form";
 import Button from "../../../shared/button/Button";
 import { useGetContactDAtaQuery } from "../../../store/apis/myContactApi";
 import { Skeleton } from "@mui/material";
-import myCv from "../../../cv/MahirHasanliCV.pdf"
+import myCv from "../../../cv/HasanliMahirCV.pdf"
 
 const Contact = () => {
   const [downLoading, setDownloadLoading] = useState(false);
