@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import "./style.css";
 
 // import required modules
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import { useGetProjectDataQuery } from "../../../store/apis/myProject";
 import { Skeleton } from "@mui/material";
 
@@ -68,11 +68,14 @@ const Project = () => {
 
         <div style={{ paddingTop: "40px" }}>
           <Swiper
+            modules={[Navigation, Autoplay]}
             slidesPerView={"auto"}
-            spaceBetween={20}
             navigation={true}
-            pagination={{ clickable: true }}
-            modules={[Pagination, Navigation]}
+            spaceBetween={20}
+            autoplay={{
+              delay: 4000,
+              loop: true,
+            }}
             className="mySwiper"
           >
             {content}
