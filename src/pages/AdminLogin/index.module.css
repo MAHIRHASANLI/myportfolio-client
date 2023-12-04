@@ -21,7 +21,6 @@
     width: 45%;
   }
   .form input {
-    height: 15px;
     font-size: 14px;
   }
 }
@@ -33,7 +32,6 @@
     width: 60%;
   }
   .form input {
-    height: 10px;
     font-size: 12px;
   }
 }
