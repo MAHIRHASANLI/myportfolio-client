@@ -74,7 +74,6 @@ const Project = () => {
             spaceBetween={20}
             autoplay={{
               delay: 4000,
-              loop: true,
             }}
             className="mySwiper"
           >
