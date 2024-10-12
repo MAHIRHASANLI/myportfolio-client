@@ -12,7 +12,7 @@ export const loginApi = createApi({
     baseQuery: fetchBaseQuery({
         baseUrl: BASE_URL,
         fetchFn: async (...args) => {
-            await pouse(2000);
+            await pouse(1000);
             return fetch(...args)
         }
     }),

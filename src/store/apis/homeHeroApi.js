@@ -11,7 +11,7 @@ export const homeHeroApi = createApi({
     reducerPath: "homeHeroApi",
     baseQuery: fetchBaseQuery({
         baseUrl: BASE_URL, fetchFn: async (...args) => {
-            await pouse(1600);
+            await pouse(1000);
             return fetch(...args)
         }
     }),
