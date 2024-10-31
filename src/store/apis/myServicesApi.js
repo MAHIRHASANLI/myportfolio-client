@@ -13,7 +13,7 @@ export const servicesApi = createApi({
     baseQuery: fetchBaseQuery({
         baseUrl: BASE_URL,
         fetchFn: async (...args) => {
-            await pouse(1000);
+            await pouse(200);
             return fetch(...args)
         }
     }),
