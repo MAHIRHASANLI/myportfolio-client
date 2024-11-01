@@ -12,7 +12,7 @@ const MainRoot = () => {
   return (
     <React.Fragment>
        <Helmet>
-        <title>Ana Səhifə - Mahir Hasanli</title>
+        <title>Mahir :: Web Developer</title>
         <meta
           name="description"
           content="Mahir Hasanli"
