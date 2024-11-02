@@ -1,17 +1,13 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react"
 import { BASE_URL } from './baseURL';
 
-const pouse = (duration) => {
-    return new Promise((resolve) => {
-        setTimeout(resolve, duration)
-    })
-}
+
 
 export const homeHeroApi = createApi({
     reducerPath: "homeHeroApi",
     baseQuery: fetchBaseQuery({
         baseUrl: BASE_URL, fetchFn: async (...args) => {
-            await pouse(200);
+            
             return fetch(...args)
         }
     }),
