@@ -5,7 +5,7 @@ import Form from "./Form";
 import Button from "../../../shared/button/Button";
 import { useGetContactDAtaQuery } from "../../../store/apis/myContactApi";
 import { Skeleton } from "@mui/material";
-import myCv from "../../../cv/HasanliMahirCV.pdf"
+import myCv from "../../../cv/HasanliMahirCV.pdf";
 
 const Contact = () => {
   const [downLoading, setDownloadLoading] = useState(false);
@@ -26,14 +26,21 @@ const Contact = () => {
         <h2>Contact Me</h2>
         <div>
           <i title="email" className="fa-solid fa-envelope"></i>
-          <a href={`mailto:${item.email}`} target="_blank" rel="noopener noreferrer" title="email">
+          <a
+            href={`mailto:${item.email}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            title="email"
+          >
             <span>{item.email}</span>
           </a>
         </div>
         <div>
           <i title="phone" className="fa-solid fa-square-phone"></i>
           <a
-            href={`tel:${item.phone}`} target="_blank" rel="noopener noreferrer"
+            href={`tel:${item.phone}`}
+            target="_blank"
+            rel="noopener noreferrer"
             title="phone"
           >
             <span>{item.phone}</span>
@@ -41,7 +48,7 @@ const Contact = () => {
         </div>
 
         <a
-          href={myCv}
+          href={item.mydata}
           download="Example-PDF-document"
           target="_blank"
           rel="noreferrer"

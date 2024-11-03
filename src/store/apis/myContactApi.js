@@ -49,4 +49,4 @@ export const contactApi = createApi({
         })
     })
 });
-export const { useGetContactDAtaQuery,usePostContactDataMutation, usePutContactDataMutation, useDeleteContactDataQuery } = contactApi;
+export const { useGetContactDAtaQuery, usePostContactDataMutation, usePutContactDataMutation, useDeleteContactDataQuery } = contactApi;

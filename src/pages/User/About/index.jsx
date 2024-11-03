@@ -40,7 +40,6 @@ const About = () => {
             <div className={style.col_7}>
               <h3 className={style.col_h3}>{item.name}</h3>
               <p className={style.col_p}>{item.profession}</p>
-
               {/* SkillsEducation */}
               <Skills />
             </div>
