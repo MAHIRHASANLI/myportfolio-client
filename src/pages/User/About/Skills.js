@@ -10,7 +10,7 @@ const Skills = () => {
         GetAllSkills("skills").then((res) => setAbout(res));
         setTimeout(() => {
             setLoading(false)
-        }, 1000)
+        }, 0)
     }, []);
     function handleClick(e) {
         GetAllSkills(e.target.value).then((res) => setAbout(res));

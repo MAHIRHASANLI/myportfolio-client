@@ -1,18 +1,11 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/dist/query/react";
 import { BASE_URL } from "./baseURL";
 
-const pouse = (duration) => {
-    return new Promise((resolve) => {
-        setTimeout(resolve, duration)
-    })
-}
-
 export const contactApi = createApi({
     reducerPath: "contactApi",
     baseQuery: fetchBaseQuery({
         baseUrl: BASE_URL,
         fetchFn: async (...args) => {
-            await pouse(1000);
             return fetch(...args)
         }
     }),
@@ -49,4 +42,5 @@ export const contactApi = createApi({
         })
     })
 });
+
 export const { useGetContactDAtaQuery, usePostContactDataMutation, usePutContactDataMutation, useDeleteContactDataQuery } = contactApi;

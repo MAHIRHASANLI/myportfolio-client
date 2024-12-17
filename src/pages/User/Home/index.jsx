@@ -9,7 +9,6 @@ import { FillingBottle } from "react-cssfx-loading";
 
 const Home = () => {
   const { data, isError, isFetching } = useGetHeroDataQuery();
-  console.log(typeof null);
   let content;
   if (isFetching)
     content = (

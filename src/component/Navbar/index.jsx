@@ -23,12 +23,12 @@ const Navbar = () => {
   else if (isError) content = <div>Error!</div>;
   else
     content = data.map((item, i) => (
-     <a href="https://mahirhasani.vercel.app/">
-      <div className="hero-fullName" key={item._id}>
-        <img src={item.image} alt="" />
-        Mahir&nbsp;<span style={{ color: "#7843E9" }}>Hasanli</span>
-      </div>
-     </a> 
+      <a href="https://mahirhasani.vercel.app/" key={i}>
+        <div className="hero-fullName">
+          <img src={item.image} alt="" />
+          Mahir&nbsp;<span style={{ color: "#7843E9" }}>Hasanli</span>
+        </div>
+      </a>
     ));
   return (
     <header className="header" style={{ zIndex: "99" }}>
@@ -45,10 +45,7 @@ const Navbar = () => {
 
         {/* ////isOpenMenu//// */}
 
-        <div
-          className="openMenu"
-          onClick={() => setIsOpen(!isOpen)}
-        >
+        <div className="openMenu" onClick={() => setIsOpen(!isOpen)}>
           {isFetching ? (
             <Skeleton
               variant="rectangular"

@@ -12,8 +12,8 @@ const MainRoot = () => {
   return (
     <React.Fragment>
       <Helmet>
-        <title>Ana Səhifə - Mahir Hasanli</title>
         <meta name="description" content="Mahir Hasanli" />
+        <title>Mahir Hasani:: Web Developer</title>
         <meta
           name="keywords"
           content="React js, JavaScript, Portfolio, Mahir Hasanli, Mahir Hasani, Mahir, Hasanli, Hasani, mahirhasanli, mahirhasani"
